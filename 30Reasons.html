@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>30 Reasons Why I Love My Wife</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<style>
+body{
+ text-align: center;
+ font-size: 1.5rem;
+}
+
+#adjectives{
+ color: #bc80ea;
+}
+
+#results{
+ font-family: Arial;
+}
+
+.myButton{
+	-moz-box-shadow:inset 0px 1px 0px 0px #efdcfb;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #efdcfb;
+	box-shadow:inset 0px 1px 0px 0px #efdcfb;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dfbdfa), color-stop(1, #bc80ea));
+	background:-moz-linear-gradient(top, #dfbdfa 5%, #bc80ea 100%);
+	background:-webkit-linear-gradient(top, #dfbdfa 5%, #bc80ea 100%);
+	background:-o-linear-gradient(top, #dfbdfa 5%, #bc80ea 100%);
+	background:-ms-linear-gradient(top, #dfbdfa 5%, #bc80ea 100%);
+	background:linear-gradient(to bottom, #dfbdfa 5%, #bc80ea 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfbdfa', endColorstr='#bc80ea',GradientType=0);
+	background-color:#dfbdfa;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #c584f3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:11px 37px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #9752cc;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bc80ea), color-stop(1, #dfbdfa));
+	background:-moz-linear-gradient(top, #bc80ea 5%, #dfbdfa 100%);
+	background:-webkit-linear-gradient(top, #bc80ea 5%, #dfbdfa 100%);
+	background:-o-linear-gradient(top, #bc80ea 5%, #dfbdfa 100%);
+	background:-ms-linear-gradient(top, #bc80ea 5%, #dfbdfa 100%);
+	background:linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc80ea', endColorstr='#dfbdfa',GradientType=0);
+	background-color:#bc80ea;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+</style>
+<body>
+<h1>30 Reasons Why I 💕 My <span id="adjectives">Beautiful</span> 👰🏿, LaTisha 😍</h1>
+<div>
+<div><p id="results"><p></div>
+ <div><p><img src='' id="image" alt='pictures'><img></p></div>
+</div>
+<button class="myButton">Choose</button>
+<script>
+var resultsIndex = 0
+var adjectivesIndex = 0
+
+var button = document.querySelector('button');
+
+button.addEventListener('click', function(){
+ changeReason();
+ changeTitle();
+})
+
+function changeReason(){
+ var resultsParagraph = document.querySelector('#results');
+ var image = document.querySelector('#image'); 
+ var results = [
+ {name: 'Because she makes me smile 🙂',
+ image: 'https://ev99vw.dm.files.1drv.com/y4mIeYeXalog5UX46inly4AZ5n4TLLlvRWCnnJSP1qTMXWLrcoQV0g32Aee_ly62PyYNF48oSlvn1DuwkLmhss4P_TiuaMZS0Zq3G-gYttmNG6PhCl9L4kdlos4qxA_q2-rNPKfrnBHrJrK30nvFZQCCV-MXZKxhc2e61nJ5grwRopenNvO3rCYmUfM1IboRxvZ0kObyryDVjBr6KsdgvZITA?width=500&height=500&cropmode=none' },
+ {name: 'Because she be like \' I leepy\ 😪', 
+  image:'https://dhgv7q.dm.files.1drv.com/y4mqK9i8yQWh0uhi7y7jcBS3HQeQfpcb1d0T0SrnQ1LXu4cXhFNd2Bnm-BmZGaZnFmogLGrvPFb-WiBnVJ6Rk3Ki-1aambE8w6ZXf_xrdkocukNjp626znVlxaJKfgehTuKfwDMqVqGcNBwsUnSRC1D5-56ttQw7gsu8z-OqlY5BXZKHXdcidQCC-CaC1fb7ttRcSr2vaUzliwZcPaU6C1z_A?width=500&height=500&cropmode=none' },
+ {name: 'Because she kisses me every morning 😗', 
+  image:'https://dvpsyq.dm.files.1drv.com/y4mB4LP-ct0gazqizQDdXLVBSN_ZARu8fRsId4JU3D8N1s_CF9EvqfWnTuutbQjws5m7nbUcOVrNI-jIe7fbh0CEVnlZCC6bX2vlWm2McM88jLTWRAAQmGfLYmLcieLNZ2JprZ_fu0E91XKmXItFpbgbqVh2IkmouRoEKcbp2a6Eh4_4QhhNH52ozWr-39bdxQa16h4aEnYGlPjLnOSSgMSYg?width=500&height=500&cropmode=none' },
+{name: 'Because she\'s my Red Carpet Queen', 
+  image:'https://fxr1xw.dm.files.1drv.com/y4mRYVlfbEK4Rlr-uZJG4o8ZCqywhXnML4hKg9KAL2ak0u-1tLLmlAhGXWVsp7vZUuacC7BzRHmoV6o4TaMdPtMI-sMIIy8c49PH7-_LCFqVj3ngoke010pEPcbavzhZmHoY68PpJzlkl751_AA1hdAVv9ja-c70UkdxHhwKZ79AYO0NZhv9SLadhyojYhjrMIpXY_kdO5fD0rAIo5P5E0ktw?width=500&height=500&cropmode=none' },
+ {name: 'Because she\'s Adventurous like me! 😗', 
+  image:'https://dhgpwg.dm.files.1drv.com/y4mBHNubSnym4f8ncrxAsmF2bYoF7X09QRwWGfnz_Qae1UnvX7rn2lRZnPPuqsHUvdyMcDsgAZ63Z-GrvEo9on9k1PROYK8fp-etUc8Sz1dQvJ3SMMah9pRajwkO4TdSOpM281nNAYJQ3txrhkFvuEpAO9qm9vDWISjOjGYCeAFazFuFUt-CzRSeWXDYmMZLukJd0_4g2g0wiNOutKcX4aTpQ?width=500&height=500&cropmode=none' },
+ {name: 'Because she\'s an angel 👼🏿', 
+  image:'https://dq9c1g.dm.files.1drv.com/y4mcTr4KNyPIuSzNeipU7FnKSuC3eMXo912aq6HWBk9CS264Dz90PYWUTkv9r0PEkyKY3z64gcL_BawGrLKuh3bOPW6GLmC7I_TwKzc-csOj1_hkmB4We0MWLdxYvLEeYuwelrDQw00D54URoDz7I9SlsXqGbgWHV5CdRwBd0RXL11jZBk_EbO_l3YgqXdNqBPqT6RV1ZzVld5CAxs8Ks-0GQ?width=500&height=500&cropmode=none' },               
+ {name: 'Because she laughs at my corney jokes 🤣', 
+  image:'https://eqpnyq.dm.files.1drv.com/y4mDKkdCtAoKPCF-vfVhm9v5LkXpbTzwzoqeB-9RspdebWPx8rK7RSvWnfIkibzmyirVO4EfJOFDHdutsoRKmUgqzJXIU-uhNXazs8EZ0QLdaS6cY_ausbe2xCETXbSfImIQ3RBlXjEB75LngPZHrbBhcqYpTOoSzksPs1N4KoFTYWaHNS5Uy04h82Tg7RxGtnnhAvg-Ah_I8r48pfhbMQ2uw?width=500&height=500&cropmode=none' },
+{name: 'Because she loves my son as her own', 
+  image:'https://fnrjsw.dm.files.1drv.com/y4mO6dJyblVD3AvHOgry7qFAeqddiHlc9D2PIKDBXeaD5zmkwxfZ_fPahoWXs1JIIB7j61mrnj1zPDmPBWKqHNLkFggm0-p712HVdR3MVp5XIWnNMnPrsJUYjMiIZi1RS_r-BjJF_9d-IDor7b7FUgCt9cPPjZ1cO_LE2BR4McuGy0YXH8hKWW822dHg3nDfDwNnUeYcrCotuGl-jgxn6Z6BQ?width=500&height=500&cropmode=none' },
+{name: 'Because she loves to cook and clean for me', 
+  image:'https://2px6za.dm.files.1drv.com/y4moBqU0jUVg_i9Q893L5nA1q6LpGYcAk5vQa_IQs86w_OFV_WXLDnGZPVlqDmM4TKUXCtjXQYXCV-cXsjUtEmQL5YUJOvYWl5t87EH1KsP-jQaQNoSkFU80DIUTLaV-DL8U3hTi8K-ilFZnBp5shtWlvJs9qIXeVwZ4EpSvvJtCe40wbZh_ryLUcKkrts-2q3OiyW0xBLh9jPg0hMX7mqWKQ?width=500&height=500&cropmode=none' },
+ {name: 'Because she doesn\'t believe poo stinks 💩', 
+  image:'https://a3hcwg.dm.files.1drv.com/y4mA94FTVlqcXn1gvQZLTe43npYk21_aWH4SlCTaW202UqvqfGnSYXe9syyYiS5dzt2jixgqzA_ZTPs5C3LU5pn47L6DRkNal0M2xn5Z67FiSQI-rwKhziCXhwJXDx8UGIqUKv_8wTT9xGFrwPzKmZRvptK3qG7xb8GDrPIzipcpNZ55QC-gppnBaHC0CkfT_6k6BP6f1a8FEUcDt6mJe12qg?width=500&height=500&cropmode=none' }, 
+ {name: 'Because she be like \'GET IT RIGHT, BOO BOO\'👏', 
+  image:'https://dfqhsg.dm.files.1drv.com/y4mSQIHxLzdlwFV0XeO32CClWWuEHm4Kos6v3zFruW7XRN3U34kI6YEei8xmsdoV0nW4JL6wzBEl1ww_UJIcWqXc7D43dX2W3VLihV2rfKLVXhBhlPadmtuk_aJWu3jlCGy0ywOcidbNFk9ZvDTvRx1jtiIm3-ohEstkoBDp4cPwkoU2MigcYVgDpyugvvFHM8NiaN3N9GypqFFEu5lrCW9dw?width=500&height=500&cropmode=none' },
+ {name: 'Because she\'s a \"Silly Billy\" like me!', 
+  image:'https://bxektg.dm.files.1drv.com/y4mqhNOKNzKJqm9feNhjVRagQc4o3hoozABc_eLs9PxvDkKRgIb6freZDanp_kBPW4o4ws268Wk-OvIZh0fXjvU9VyWVz0WR4ykGJK2h589AOdcoVccM1lmUHaoxByF2pV-xw9aSvvWJnpFoDP5wQzKLqTN1WLW79mVN_v6Q9BUGk4gIFBfyXVy_Bie4mD4nSfZhcLrwNBmHW0RLWGi-xWRDg?width=500&height=500&cropmode=none' },
+ {name: 'Because she\'s a Selfie Queen 🤳', 
+  image:'https://fppzyq.dm.files.1drv.com/y4mPCjkUGQxj2dwwefQuu429YXYk-ClFC37NT8l_ZLcm_dv92dgLUGpyS4EWfx0lSuiVws7WMQnwK6HQKq1rTS0ZgEcl9wuIxS5ySMeLacaNQIWdiKPL6FersZXq8goEFJde2OMzO_7bVX69SqMcX2Ts5XUdqIUrACiEpZxuijiP2rm2tGafEu-opDGh2qxKw9wHkSoiXJRI1rY1jYPEfjsuw?width=500&height=500&cropmode=none' }, 
+ {name: 'Because she\'s a sophisticated lady,', 
+  image:'https://2pybza.dm.files.1drv.com/y4mCa4z8wRshSeWsQpdA_Gk601chiIqc_ShkUIppMmUNBoIN79eq92KZopKOa9oQKKCvdTWb-Em2M1GQ-dLGHacJdiXxU48TSb6PufccLVyN8w9pDHLflhw9iabGZou2pyGqtmryozcC2FDLahkIRiVRmcbgwK7z90U39ZWFRM_S4JAHCGinyd3UgTZJXSYzBPFg6aC3bCgXoAUOSCdqRS-sA?width=500&height=500&cropmode=none' },
+ {name:  'Because she always brightens my day like a star ⭐', 
+  image:'https://ehtb6g.dm.files.1drv.com/y4msM1mpijp7ZqwTSBE706xOXCjAXRT9ZL3l2VzdKb8EsOg1g_jRX6_XTRd08thatrSB1xFWsEi16SF-AE0oZCvUbCvEDP5b6vqoVY-i9xymaG5VrqictPuytMZAK2lNEOsu1ZXvCvTvniJCT5Hz5GXSeecMKThHFa41yrshydAHXd-KtdiOAirCwEwh75C_yJwrW8MRVB24YabSVqxK8u6RQ?width=500&height=500&cropmode=none' }, 
+ {name: 'Because she always makes sure I have food to eat 🍖 🥗 🍗', 
+  image:'https://ehto6g.dm.files.1drv.com/y4mPh1PGUxTQ002laMRJGjhVUBQFE7_mTZVwBBhF1N_gGOE_IOe5NoXHNj9bDWxeX29-yiGtx68X4U8DlAfbihWqg12uarObk9xwRdpkaHNsX5eogl_EdLGh41CijrKSUNAY-vCs_lg-t_HQyOWuqIY1vv1ArSHNLB6HEE6_IF6zJf_r8AZFnrKKkk5Je7w3CcMNEJ3BlU3hbMEUur9iFd6_g?width=500&height=500&cropmode=none' },
+{name: 'Because she never runs away from an opportunity to be a kid again', 
+  image:'https://evpoyq.dm.files.1drv.com/y4m3UktMkTlCX3HpUrX8KE-Yo4zmQnCmTI5RdW2l3Ycs83bI5lPZx2lnCC-5FggBcARgy2TLsmdASyFaOvQ04UiXKJ38WzZMwE8gK4OXfcJJasvA0MmEOkXorxcVxYtfygSRWcu7tCixYz3DDyKsk6hWTCTPYMRhcVapzvXebLItNi0Hm8RAeGq-VwERZj981WpooKuwNxPl2PEYztw9BvUkQ?width=500&height=500&cropmode=none' }, {name: 'Because she\'s a golfing superstar 🏌️', 
+  image:'https://dq8y7q.dm.files.1drv.com/y4mip9wIFUkXahbFBM7De-WFJHVRx-da7zQT7_03rx8Ji8ynM3T9tYBx0bE1SuVJNzBPxRsvuKfQ-j0J9imuwbwG-5nOcsN9w6aTGssW020NsTn1oP-YBXdDd1wAe0zmoGaL4LznPEi9oKnaXUAcPa7RTcZZD_G_8NS6u-3VeWLtmmyKN-q9yhiguHYlZ7b5At1ATNApFplPwNH88w7GL_BEQ?width=500&height=500&cropmode=none' },                
+ {name: 'Because she strong and be lifting weights like 🏋🏿♀️', 
+  image:'' },                               
+ {name: 'Because she likes to sing 🎤 and dance 💃🏿 and is always a vibrant person', 
+  image:'https://zqxtwg.dm.files.1drv.com/y4mrMEZsN4o7B8-E_RTw8hsEhqK-JSzrkYswTsvIUIpy9nc_DMDSYdXzvvFvJFjr798ZirRZS0JqblcSmDbsoJjLtLirlLXcdXz-3_H7cSI50MA6GocznWogk4qbR17KlQOz2oNGi2RptjUIwi8QREJ_rI95nIAmvltFD6u2gjGCsfUvO9sdtAke5I0aLy9GX5RwjXA13I7wio5OuzFbxJ7ew?width=500&height=500&cropmode=none' }, 
+ {name: 'Because she\'s selfless and doesn\'t mind volunteering her time to help others', 
+  image:'https://angw2q.dm.files.1drv.com/y4m2qqdp-ESzApgWHw_aECdEz7eg13BwnlwfBL46I-62a7eTOzZ63Bas-JdU77bjKVQhrsQ-1DCTpEl4mIluZ7fFSB3-_7x2Wk4oCNkVVJrfGD3PMN2TUVirOWwtNbnFXFaLjQc8cwr5cc6DZnbH_YqmoDmEiiVGAZq3PBjvlZYd59IsyXMrmOHuaxfiCxqh19SjhqxK18UNFaiQr-qlpyHEg?width=500&height=500&cropmode=none' },
+ {name:  'Because she\'s my beach 🏖️ partner!', 
+  image:'https://f3te6g.dm.files.1drv.com/y4m2Ws0vCConw1yfGXRe2JBP6lD01_3w7GKFlL7eT6nHQv8tQa67jY--60BB7Mj4UY3qPu-EA_HYYQnHP0K8afezlXg6yncj8KDbft4gNxpCpwfgE3T6yYbZT4CTQFqKjGIwOExgM5sC5eXJsl56h9S3spi77nDsjp1U-v98S2OW80CUQ2FrvWUSuNNUFzeM_9SYFZJE2HqUxnKx0NexVlCJg?width=500&height=500&cropmode=none' },
+ {name:  'Because she\'s a business mogul', 
+  image:'https://ep8q7q.dm.files.1drv.com/y4mXWKn0Xuqt5nwfZKsReTo73ol8q2_4Z7fZulH8BnC9JP07e4zsw1IzN_JU0B61XJkPuys3QQjEyOeESeY8qyTmCyA_kE2kq8zyM-C9tP6k0RdVQo8_jkJMFgimitOHAO3wkU9NjVkImnHYyTzIhRaEDORKFzNiJWRU869j-XG0Zaiv7vQIpJQ5XeWy7sHIG8EW0OQSUcBpok3OYmLD7q-DA?width=500&height=500&cropmode=none' },
+ {name: 'And my bicyle 🚲 partner', 
+  image:'https://gv9f1g.dm.files.1drv.com/y4mzL6af1LrJoMvKH3AEcuVTFaQr8GCyviar-YBWJsibF6Pce3ZZsQtW36PhFxlMy6KfjEWGW1Xama8HAk6ggEKKHaXHXPAxHq-njUDzPu4LVGq_bOWKmjODAer4jhzxUUiP9NZB4ejXBgyjbt406lByshCn_Cjb92qXiZMUJgJcwxoI6D-qy5u62rhJAhJ5fCNu54tThxNiH6Zg8oaEgXstw?width=500&height=500&cropmode=none' },                
+ {name: 'And my travel ✈️ partner ', 
+  image:'https://fht2vw.dm.files.1drv.com/y4me5UFxO1fcgIp7VKYrniKBMqDdMpXRShrbISALSP-BqxAT_ZT2BjphoP5yLgGZLexfgGmCNSC00WqSaferuRYT5Kyx9Joc8hCsRKxo5BxsBhC3W_x-78HeJ3WJ4BDgFKUmmynMCtZ6saO3o3p6LRY74ocAM3vIahVj9pL5lxXZzOrMz-wcM_Cntpf1Zps13Vwz4Gsl7DAdmali5S5w6J8FQ?width=500&height=500&cropmode=none' },                
+ {name: 'And my conference partner', 
+  image:'https://f3risw.dm.files.1drv.com/y4m-6bii13trBDN8HKuAn2zxwq7hjMmeEMsT6sTWXEKgdi_6IAUmEF6oLsz-3XdFvI1NOes2mjtwG8-AOib5jc1vWx1WzC00eX-CJ_pUdynJvuG4FcLLWmQXHZwXWvRKSqyI5WiQlWXPhiBmPArFrNLp4TOiqFq7UK6aZy0KSCGyYT6uPvBBa_1ZwRuWqQhzACKguZh4nqgpkLXGPQ1-KUydg?width=500&height=500&cropmode=none' },                  
+ {name: 'And because she helps me fix the house 🛠️', 
+  image:'https://e3qeyg.dm.files.1drv.com/y4m_CSJFTh_axZILTwBo9u3WzGO1pVn0OEblEk-AlS4J9X6ekdHggoOXFG0r2PJtr6FRCVmKfSG7uaL0cTTsCAeAxLU4C2P9kyqxW-dLpJPvRFt0-pk806_MH13dwvqJGiw0z2W9pApyOCJuuzxY5ezdqh-wCE7NnXXKxSx8LTuxc7Uk3zxCVPTKIeE2DWlcL6ZjXiwiaKE29L4F0UEpZL0kQ?width=500&height=500&cropmode=none' },
+ {name: 'And because she just brings me tears of joy 😂', 
+  image:'https://gf9f1g.dm.files.1drv.com/y4m96a8RxUpAXw2Bstc6bfdmtFfBcZhVRiHJaGSjn_njr8RDB_JVe7PmdbJ7Gdtvju-vCMuezQUvKAC83Yoe-QBy64OIQ2Xn5GKxRUE92NWpG6Qx2Edo01in8-7emXVeINtyQBETjN4nLG6-1zyjCyiRqmzvFYzV4MtkRzUizG-0bkd961prvzPD0HIcjHFPEQwY7JQZNCJDig2yI6ANLqcog?width=500&height=500&cropmode=none' },                
+ {name: 'Every waking day of my life', 
+  image:'https://fhrzsw.dm.files.1drv.com/y4mFGYKyYZ794O8BxWEwYD21R0lpUZSl9wbR-WdUllt5oukAWliM_NiSxn0WjMkmnceEngccNF1MvjHg_KNp2GSgkpWX16egbY928Pb7clg9h3SkoE7lFJlR7RZqBOOPUUuEhcDvosKObiQpYyP8Vy7FvCL7zf1PgOfJU7smxdD0R3RhQL4L666O7M-Untp7C1p4x2Vv8fkQEktmJBdc2NlqA?width=500&height=500&cropmode=none' },                
+ {name: 'Happy Valentine\'s Day 2019 💘, My Love! And I anticipate many more! You truly are my partner in life.', 
+  image:'https://z3gs7q.dm.files.1drv.com/y4mRUQF1CESxkxND1Mzres7ktB3ymAlvgg4jdb-_5a72Nxbr7Llvr9XCJhbPSN67TYYvHHP2NDUkJv5vi1sqJ45AYNyjGyhNymtgJzu8HJGsNZrZHWAeNP9KpcW141kDigkha_9WGv48nuGDkeq3qcDl7u8yGh-WRPmQ5zoVl1RIPMjKfF0M8p15YaurNbp8qmUFynjLytfQ9OsU4qkdpsdgQ?width=500&height=500&cropmode=none' },                 
+]
+ 
+if (results[resultsIndex] != undefined){
+    resultsParagraph.innerHTML = results[resultsIndex].name;
+    image.src = results[resultsIndex].image;
+    resultsIndex++
+} else {
+ resultsIndex = 0
+}
+}
+
+function changeTitle(){
+ 
+ var titleSpan = document.querySelector('span')
+ 
+ var adjectives = [
+'Alluring',
+'Appealing',
+'Charming',
+'Cute',
+'Dazzling',
+'Elegant',
+'Exquisite',
+'Fascinating',
+'Fine',
+'Good-looking',
+'Gorgeous',
+'Graceful',
+'Lovely',
+'Magnificent',
+'Marvelous',
+'Splendid',
+'Stunning',
+'Wonderful',
+'Beautiful',
+'Admirable',
+'Angelic',
+'Classy',
+'Divine',
+'Enticing',
+'Excellent',
+'Foxy',
+'Radiant',
+'Ravishing',
+]
+ if (adjectives[adjectivesIndex] != undefined){
+    titleSpan.innerHTML = adjectives[adjectivesIndex]
+    adjectivesIndex++
+} else {
+ adjectivesIndex = 0
+}
+
+}
+
+</script>
+</body>
+</html>
